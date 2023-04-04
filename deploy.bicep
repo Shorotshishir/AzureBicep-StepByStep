@@ -15,3 +15,11 @@ module module_iothub 'module/iothub.bicep' = {
     location: azbicepresourcegroup.location
   }
 }
+
+module modeule_adt 'module/adt.bicep' = {
+  scope: azbicepresourcegroup
+  name: 'azbicep-dev-japaneast-adt'
+  params: {
+    location: azbicepresourcegroup.location
+  }
+}
