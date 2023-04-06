@@ -23,3 +23,11 @@ module modeule_adt 'module/adt.bicep' = {
     location: azbicepresourcegroup.location
   }
 }
+
+module module_function 'module/functions.bicep' = {
+  scope: azbicepresourcegroup
+  name: 'azbicep-dev-japaneast-func'
+  params: {
+    location: azbicepresourcegroup.location
+  }
+}
